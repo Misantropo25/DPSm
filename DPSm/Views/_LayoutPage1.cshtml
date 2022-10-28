@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/assets/css/style-starter.css" rel="stylesheet" />
+    <a href="~/assets/fonts/fontawesome-webfont.eot"></a>
+    <a href="~/assets/fonts/fontawesome-webfont.ttf"></a>
+    <a href="~/assets/fonts/fontawesome-webfont.woff"></a>
+    <a href="~/assets/fonts/fontawesome-webfont.woff2"></a>
+    <a href="~/assets/fonts/FontAwesome.otf"></a>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="~/assets/js/jquery.countup.js"></script>
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/jquery.waypoints.min.js"></script>
+    <script src="~/assets/js/owl.carousel.js"></script>
+    <script src="~/assets/js/theme-change.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <h1>
+                    <a class="navbar-brand" href="index.html">
+                        <span></span>
+                        <img src="~/assets/images/I.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa icon-expand fa-bars"></span>
+                    <span class="fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li>@Html.ActionLink("Inicio ", "Index", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Nosotros ", "About", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Contactos ", "Contact", "Home", new { @class = "nav-link" })</li>
+
+                    </ul>
+                    <ul class="navbar-nav search-right mt-lg-0 mt-2">
+                        <li class="nav-item mr-3" title="Search">
+                            <a href="#search" class="btn search-search">
+                                <span class="fa fa-search" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="btn btn-primary d-none d-lg-block btn-style mr-2">
+                                Contactate con Nosotros
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- //toggle switch for light and dark theme -->
+                    <!-- search popup -->
+                    <div id="search" class="pop-overlay">
+                        <div class="popup">
+                            <form action="#" method="GET" class="d-sm-flex">
+                                <input type="search" placeholder="Search.." name="search" required="required" autofocus>
+                                <button type="submit">Search</button>
+                                <a class="close" href="#url">&times;</a>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /search popup -->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+    <div>
+        @RenderBody()
+    </div>
+    <!-- footer-66 -->
+    <footer class="w3l-footer-66">
+        <section class="footer-inner-main">
+            <div class="footer-hny-grids">
+                <div class="container py-lg-3">
+                    <div class="text-txt">
+                        <div class="right-side">
+                            <div class="row sub-columns">
+                                <div class="col-lg-4 col-md-6 sub-one-left pr-lg-4">
+                                    <h2>
+                                        <a class="navbar-brand">
+                                            <img href="index.html" src="https://revistas.uandina.edu.pe/public/site/pageHeaderTitleImage_es_ES.png" width="300" height="150">
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="col-lg-4 col-md-6 sub-one-left pr-lg-4">
+                                    <!-- if logo is image enable this
+                                    <a class="navbar-brand" href="#index.html">
+                                        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                                    </a> -->
+                                    <p class="pr-lg-4">
+                                        Tú futuro depende de una buena elección, potenciamos tu
+                                        talento en una de nuestras 20 Escuelas Profesionales.
+                                        Sé un profesional integral con educación de calidad,
+                                        orientada a la ciencia y tecnología, con nuestros valores andinos.
+                                    </p>
+                                    <div class="columns-2">
+                                        <ul class="social">
+                                            <li>
+                                                <a href="https://www.facebook.com/UniversidadAndinaCusco"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+                                            </li>
+
+                                            <li>
+                                                <a href="https://twitter.com/uandina_cusco"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/c/UniversidadAndinaCusco"><span class="fa fa-youtube" aria-hidden="true"></span></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 sub-one-left">
+                                    <h6>Dirección</h6>
+                                    <div class="mid-footer-gd sub-two-right">
+
+                                        <ul>
+                                            <li>
+                                                <p><span class="fa fa-angle-double-right mr-2"></span> Urb. Ingeniería Larapa Grande A-7</p>
+                                            </li>
+                                            <li>
+                                                <p><span class="fa fa-angle-double-right mr-2"></span>San Jerónimo - Cusco - Perú</p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="below-section">
+                <div class="container">
+                    <div class="copyright-footer">
+                        <div class="columns text-lg-left">
+                            <p>Copyright © 2022 Universidad Andina del Cusco. Todos los derechos reservados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright -->
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-long-arrow-up" aria-hidden="true"></span>
+            </button>
+            <script>
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () {
+                    scrollFunction()
+                };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("movetop").style.display = "block";
+                    } else {
+                        document.getElementById("movetop").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+            <!-- /move top -->
+
+        </section>
+    </footer>
+    <!--//footer-66 -->
+</body>
+</html>
